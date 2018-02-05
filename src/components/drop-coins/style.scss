@@ -1,0 +1,14 @@
+@mixin centralized() {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.dropCoins {
+  margin-top: 15px;
+  background-color: #cccccc;
+  height: 120px;
+}

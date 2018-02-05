@@ -1,8 +1,10 @@
 import {combineReducers} from 'redux';
 import {routerReducer} from 'react-router-redux';
-import defaultReducer from './containers/home/default-reducer';
+import candyReducer from './containers/candy-machine/reducer';
+import dropCoinReducer from './components/drop-coins/reducer';
 
 export default combineReducers({
     router: routerReducer,
-    defaultReducer: defaultReducer
+    candy: candyReducer,
+    coins: dropCoinReducer
 })

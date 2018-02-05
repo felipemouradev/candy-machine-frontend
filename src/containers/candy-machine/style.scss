@@ -1,0 +1,54 @@
+$color1: #646464;
+$color2: #7d7d7d;
+$color3: #ae7f8a;
+
+
+
+.candies {
+  border: 10px solid $color1;
+  width: 470px;
+  background-color: $color2;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+@mixin centralized() {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.machine {
+  @include centralized();
+}
+
+.coins {
+  @include centralized();
+}
+
+.wrapper-machine {
+  text-align: center;
+}
+
+.buttonSection {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  @include centralized();
+}
+
+.makePaymentLeft {
+  text-align: left;
+}
+
+.makePaymentRight {
+  text-align: right;
+  margin-left: 15px;
+}
+
+.button {
+  padding: 8px;
+  background: $color3;
+}
