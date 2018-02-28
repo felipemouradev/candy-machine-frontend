@@ -5,20 +5,14 @@ import Coin from './../coin';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {updateDropCoin} from './actions';
+
 import './style.css';
 
-// Drag sources and drop targets only interact
-// if they have the same string type.
-// You want to keep types in a separate file with
-// the rest of your app's constants.
 const Types = {
     CARD: 'card'
 };
 
-/**
- * Specifies the drop target contract.
- * All methods are optional.
- */
+
 const CoinTarget = {
 
     hover(props, monitor) {
