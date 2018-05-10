@@ -1,20 +1,18 @@
-import React from 'react';
-import { Route, Link } from 'react-router-dom';
-import Home from '../home'
-import About from '../about'
+import React, {Component} from 'react';
+import {Route} from 'react-router-dom';
+import CandyMachine from '../candy-machine';
+import HTML5Backend from 'react-dnd-html5-backend';
+import {DragDropContext} from 'react-dnd';
 
-const App = () => (
-  <div>
-    <header>
-      <Link to="/">Home</Link>
-      <Link to="/about-us">About</Link>
-    </header>
 
-    <main>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/about-us" component={About} />
-    </main>
-  </div>
-);
+class App extends Component {
+    render = () => {
+        return (<div>
+            <main>
+                <Route exact path="/" component={CandyMachine}/>
+            </main>
+        </div>)
+    };
+}
 
-export default App;
+export default DragDropContext(HTML5Backend)(App);

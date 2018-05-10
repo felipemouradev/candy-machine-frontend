@@ -1,0 +1,2 @@
+export const UPDATE_DROP_COIN = 'UPDATE_DROP_COIN';
+export const REMOVE_ALL_COINS = 'REMOVE_ALL_COINS';

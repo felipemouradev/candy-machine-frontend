@@ -1,0 +1,26 @@
+$color3: #ae7f8a;
+$color4: #c29ea6;
+$color5: #d7bdc2;
+
+.candy img{
+  width: 150px;
+  height: auto;
+  padding: 15px;
+  float: left;
+}
+.candy {
+  height: 170px;
+  width: 150px !important;
+  display: inline-block;
+}
+.candy span {
+  position: relative;
+  bottom: 14px;
+  padding: 10px;
+  background: $color4;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #000000;
+  border: 2px solid $color3;
+}
